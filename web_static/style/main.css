@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* -----------------------------------------------------------------
+                            SEARCH SECTION
+----------------------------------------------------------------------*/
+#main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 25px auto 0px auto;
+    /* border: 1px solid blue; */
+}
+.section__search {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+.div__container {
+    padding: 20px 30px;
+    width: 25%;
+}
+.div__container:first-child {
+    border-right: 1px solid lightgrey;
+}
+.search__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.button--primary {
+    padding: 20px 75px;
+    color: whitesmoke;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: orangered;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button--primary:hover {
+    opacity: 90%;
+
+}
+/* -----------------------------------------------------------------
+                            OFFERS SECTION
+----------------------------------------------------------------------*/
+.section__places {
+    margin: 25px auto 0px auto;
+}
+.section__title {
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 25px;
+}
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    row-gap: 50px;
+}
+
+.article__offers {
+    border: 2px solid orangered;
+    margin: 0 auto;
+    max-width: 390px;
+    border-radius: 4px;
+}
+.article__container {
+    padding: 25px 25px 0 25px;
+}
+.article__header {
+    position: relative;
+    margin-bottom: 75px;
+}
+.article__title {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+.article__price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid orangered;
+}
+.article__price p {
+    margin: auto;
+    color: orangered;
+    font-size: 25   px;
+    font-weight: 800;
+}
+.article__info {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 20px 0;
+}
+.article__info__icons img{
+    display: flex;
+    margin:0 auto;
+}
+.article__description {
+    padding: 10px 0 0px 0;
+}
+.owner__name {
+    font-size: 20px;
+    font-weight: 600;
+}
+.description__summary {
+    padding: 10px 0 15px 0;
+}
+/* -----------------------------------------------------------------
+                            MEDIA QUERY FOR 480PX
+----------------------------------------------------------------------*/
+@media(max-width: 768px) {
+    .section__search {
+        display: flex;
+        flex-direction: column;
+    }
+    .div__container {
+        padding: 20px 30px;
+        width: auto;
+    }
+    .div__container:not(:last-child) {
+        border-bottom: 2px solid lightgray;
+    }
+    .div__container:first-child {
+        border-right: none;
+    }
+    .div__container:last-child {
+        margin: 0 auto;
+    }
+
+}
